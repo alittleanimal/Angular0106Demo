@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService, Product } from '../shared/product.service';
 
 @Component({
   selector: 'app-product',
@@ -7,15 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  private products: Array<Product>;
+  private products: Product[];
   private imgUrl = "http://via.placeholder.com/320x150";
 
-  constructor() { }
+  constructor(private productService: ProductService) { }
 
   ngOnInit() {
-    
-
-    this.products.push(new Product(66, '第六个商品', 5.99, 2.5, '这是第六个商品，Angular实战', ['电子产品', '硬件设备']));
+  
+    this.products = this.productService.getProducts();
   }
 
 }
