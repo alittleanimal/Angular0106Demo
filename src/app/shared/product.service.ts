@@ -11,10 +11,10 @@ export class ProductService {
     ];
 
     private comments: Comment[] = [
-        new Comment(1, 1, "2017-02-02 22:22:22", "zhangsan", 3, "good"),
-        new Comment(2, 1, "2017-02-02 22:22:22", "lisi", 4, "good"),
-        new Comment(3, 1, "2017-02-02 22:22:22", "wangwu", 2, "good"),
-        new Comment(4, 2, "2017-02-02 22:22:22", "zhouliu", 5, "good"),
+        new Comment(1, 1, "2017-02-02 22:22:22", "张三", 3, "good"),
+        new Comment(2, 1, "2017-02-02 22:22:22", "李四", 4, "good"),
+        new Comment(3, 1, "2017-02-02 22:22:22", "王五", 2, "good"),
+        new Comment(4, 2, "2017-02-02 22:22:22", "周六", 5, "good"),
 
     ]
 
