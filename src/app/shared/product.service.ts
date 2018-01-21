@@ -18,7 +18,6 @@ export class ProductService {
 
     ]
 
-
     constructor() {}
 
     getAllCategories(): string[] {
