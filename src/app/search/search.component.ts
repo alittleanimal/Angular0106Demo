@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { FormControl } from '../../../node_modules/_@angular_forms@5.1.3@@angular/forms/src/model';
+import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 import { ProductService } from '../shared/product.service';
 
 @Component({
