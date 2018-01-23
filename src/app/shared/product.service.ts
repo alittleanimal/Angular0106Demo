@@ -15,7 +15,6 @@ export class ProductService {
         new Comment(2, 1, "2017-02-02 22:22:22", "李四", 4, "good"),
         new Comment(3, 1, "2017-02-02 22:22:22", "王五", 2, "good"),
         new Comment(4, 2, "2017-02-02 22:22:22", "周六", 5, "good"),
-
     ]
 
     constructor() {}
