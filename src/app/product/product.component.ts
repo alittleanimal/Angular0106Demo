@@ -12,14 +12,17 @@ import { Observable } from 'rxjs/Observable';
 export class ProductComponent implements OnInit {
 
   private products: Observable<Product[]>;
-  private imgUrl = "http://via.placeholder.com/320x150";
+  private imgUrl = 'http://via.placeholder.com/320x150';
 
   constructor(private productService: ProductService) {
-    
+
   }
 
   ngOnInit() {
     this.products = this.productService.getProducts();
+    this.productService.searchEvent.subscribe(
+      params => this.products = this.productService.search(params)
+    );
   }
 
 }
