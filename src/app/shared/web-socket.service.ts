@@ -19,7 +19,7 @@ export class WebSocketService {
         this.ws.onopen = (event) => this.sendMessage({productId: id});
         return () => this.ws.close();
       }
-    ).map(message => JSON.stringify(message));
+    ).map(message => JSON.parse(message));
   }
 
   sendMessage(message: any) {
